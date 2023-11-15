@@ -5,8 +5,8 @@ var isAnagram = function(s, t) {
     else{
         s = s.split(""); //change to array
         t = t.split("");
-        s.sort();
-        t.sort();
+        s= s.sort().join("");
+        t= t.sort().join("");
         return s === t;
     }
     }
